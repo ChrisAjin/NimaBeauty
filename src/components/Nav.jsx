@@ -1,9 +1,10 @@
 import {headerLogo} from '../assets/images';
 import { navLinks } from '../constants';
+import {hamburger} from '../assets/icons'
 const Nav = () => {
   return (
-	<header classeName= "padding-x" py-8 absolute z-10 w-full>
-		<nav className= "flex justify-between items-center max-container">
+	<header className= 'padding-x py-8 absolute z-10 w-full'>
+		<nav className= "flex justify-start items-center w-full">
 			<a href="/">
 				<img src={headerLogo}
 				alt="Logo"
@@ -22,6 +23,14 @@ const Nav = () => {
 					</li>
 				))}
 			</ul>
+			<div className="hidden max-lg:block">
+				<img
+				src= {hamburger}
+				alt="Hamburger"
+				width={25}
+				height= {25}
+				/>
+			</div>
 		</nav>
 	</header>
   )

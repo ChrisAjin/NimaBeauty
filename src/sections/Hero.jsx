@@ -1,6 +1,8 @@
+import {BigLogo} from '../assets/images';
 const Hero = () => {
   return (
-	<div>Hero</div>
+	<section className='max-container'>
+	</section>
   )
 }
 
