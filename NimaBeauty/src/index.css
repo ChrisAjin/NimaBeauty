@@ -11,49 +11,29 @@
 	font-family: 'sofiapro-light', sans-serif;
   }
 
-.scroll-arrow {
-	stroke: white;
+  .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
   }
 
-.scroll-bar {
-	height: 50px; /* ou la hauteur que vous souhaitez */
-	width: 1px; /* ou la largeur que vous souhaitez */
-	background-color: white; /* ou la couleur que vous souhaitez */
-
+  .text-box {
+	width: 620px;  /* Ajustez la taille selon vos besoins */
+	height: 560px; /* Ajustez la taille selon vos besoins */
+	background-color: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: -50px; /* Chevauchement */
+	z-index: 1; /* S'assurer que le carré est au-dessus de l'image */
   }
 
-  @keyframes loadingAnimation {
-	0% { height: 40; }
-	100% { height: 0px; }
-  }
-  .animate-element {
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	animation-fill-mode: none;
-	animation-play-state: running;
-	animation-name: more;
-	/* animation-timeline: auto; (Cette propriété n'est pas standard) */
-	/* animation-range-start et animation-range-end ne sont pas des propriétés standard */
-  }
-  @keyframes more {
-	0% { opacity: 1; }
-	50% { opacity: 0.5; }
-	100% { opacity: 1; }
+  .chevauchant-image {
+	max-width: 200px; /* Ajustez selon la taille de votre image */
+	max-height: 200px; /* Ajustez selon la taille de votre image */
   }
 
-.scroll-down-arrow {
-	position: fixed; /* ou absolute, selon le besoin */
-	bottom: 20px; /* Ajustez en fonction de l'emplacement souhaité */
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 24px; /* Taille de la flèche */
-	color: rgb(255, 255, 255); /* Couleur de la flèche */
-	cursor: pointer;
-	animation: bounce 2s infinite;
-  }
 .discover-text {
     top: 50%;
     left: 50%;
@@ -61,16 +41,6 @@
     font-size: 20px;
     color: rgb(255, 255, 255);
     margin: 0;
-}
-.before {
-    animation: more 2s infinite linear;
-    background-color: var(--color_1);
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
 
 @keyframes bounce {

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ScrollDown from './scrolldown.json'
+import Lottie from 'lottie-react'
 
 const ScrollDownIndicator = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -21,9 +23,10 @@ const ScrollDownIndicator = () => {
 
   return (
     isVisible && (
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 ">
-        <div className="text-center mb-2 navbar text-lg discover-text">Découvrir</div>
-        <div className="scroll-bar animate-element"></div>
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 mt-12">
+        <div style={{ width: '300px', height: '300px' }} >
+			<Lottie animationData={ScrollDown}/>
+		</div>
       </div>
     )
   );
