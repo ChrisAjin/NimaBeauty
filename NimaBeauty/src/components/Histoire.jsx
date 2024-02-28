@@ -5,13 +5,13 @@ const MonComposant = () => {
     <div name="home" className="relative h-screen w-full ">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className="flex flex-col justify-center h-full relative">
-          <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl">
+          <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-4xl">
             <div className="md:flex">
-              <div className="p-8 ">
-                <h2 className="uppercase tracking-wide text-black mr-4">
+              <div className="p-12 ">
+                <h2 className="uppercase tracking-wide text-black mr-4 font-sofia">
                   À PROPOS DE MOI
                 </h2>
-                <p className="text-black py-8 ">
+                <p className="text-black py-8 font-sofia">
                   Hello, moi c’est Iman ! 🧚‍♀️ Je suis votre experte en beauté du
                   regard et maquillage semi-permanent 👄. Passionnée par l’idée
                   de révéler la beauté unique de chaque visage, j’adopte les
@@ -21,7 +21,7 @@ const MonComposant = () => {
                 </p>
                 <a
                   href="https://www.treatwell.fr/salon/nima-beauty-clinic/"
-                  className="text-4xl sm:text-7 text-black"
+                  className="text-4xl sm:text-7 text-black font-sofia"
                 >
                   Plus d'information
                 </a>
@@ -33,7 +33,7 @@ const MonComposant = () => {
           <img
             src={LogoNima}
             alt="profil"
-            className="rounded-2xl mx-4 w-2/3 md:w-full"
+            className="rounded-2xl mx-4 w-2/3 md:w-full shadow-lg"
             style={{
               width: "30%",
               height: "80%",

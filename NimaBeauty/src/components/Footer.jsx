@@ -1,44 +1,69 @@
-import React from 'react';
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaPinterest,
-  FaYoutube,
-} from 'react-icons/fa';
+import { copyrightSign } from "../assets/icons";
+import footerLogo from "../assets/8.svg";
+import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
-    <div className='absolute w-full bg-transparent py-16'>
-      <div className='max-w-[1240px] mx-auto flex flex-col px-4'>
-        <div className='sm:flex text-center justify-between items-center'>
-          <h1>Nima Beauty Clinic</h1>
-          <div className='flex justify-between w-full sm:max-w-[280px] my-4'>
-            <FaFacebook className='icon' />
-            <FaTwitter className='icon' />
-            <FaYoutube className='icon' />
-            <FaPinterest className='icon' />
-            <FaInstagram className='icon' />
+    <footer className=" relative max-container text-white font-sofia">
+      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col ">
+        <div className="flex flex-col items-start">
+          <a href="/">
+            <img
+              src={footerLogo}
+              alt="logo"
+              width={150}
+              height={46}
+              className="m-0"
+            />
+          </a>
+
+          <div className="flex items-center gap-5 mt-8">
+            {socialMedia.map((icon) => (
+              <div
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
+                key={icon.alt}
+              >
+                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+              </div>
+            ))}
           </div>
         </div>
-        <div className='flex justify-between'>
-          <ul className='lg:flex'>
-            <li>About</li>
-            <li>Partnerships</li>
-            <li>Careers</li>
-            <li>Newsroom</li>
-            <li>Advertising</li>
-          </ul>
-          <ul className='text-right lg:flex'>
-            <li>Home</li>
-            <li>Destinations</li>
-            <li>Travel</li>
-            <li>View</li>
-            <li>Book</li>
-          </ul>
+
+        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          {footerLinks.map((section) => (
+            <div key={section.title}>
+              <h4 className="text-2xl leading-normal font-medium mb-6 text-white">
+                {section.title}
+              </h4>
+              <ul>
+                {section.links.map((link) => (
+                  <li
+                    className="mt-3 text-base leading-normal text-white-400 hover:text-slate-gray"
+                    key={link.name}
+                  >
+                    <a href={link.link}>{link.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+
+      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-1 justify-start items-center gap-2 cursor-pointer">
+          <img
+            src={copyrightSign}
+            alt="copyright sign"
+            width={20}
+            height={20}
+            className="rounded-full m-0"
+          />
+          <p>Copyright. All rights reserved.</p>
+        </div>
+        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+      </div>
+    </footer>
   );
 };
 
