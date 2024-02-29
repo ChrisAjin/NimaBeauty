@@ -4,20 +4,20 @@ import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className=" relative max-container text-white font-sofia">
+    <footer className="max-container text-white font-sofia">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col ">
         <div className="flex flex-col items-start">
           <a href="/">
             <img
               src={footerLogo}
               alt="logo"
-              width={150}
+              width={350}
               height={46}
-              className="m-0"
+              className="-m-8 mt-8"
             />
           </a>
 
-          <div className="flex items-center gap-5 mt-8">
+          <div className="flex items-center gap-5 mt-8 m-8">
             {socialMedia.map((icon) => (
               <div
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+        <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap mt-8">
           {footerLinks.map((section) => (
             <div key={section.title}>
               <h4 className="text-2xl leading-normal font-medium mb-6 text-white">
@@ -61,7 +61,7 @@ const Footer = () => {
           />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="font-montserrat cursor-pointer m-8">Terms & Conditions</p>
       </div>
     </footer>
   );

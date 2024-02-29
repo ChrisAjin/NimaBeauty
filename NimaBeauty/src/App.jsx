@@ -9,7 +9,7 @@ import video1 from "./assets/video4.mov";
 
 const App = () => (
   <div>
-    <div className="video-background">
+    <div className="fixed inset-0 z-0">
       <video
         className="w-full h-full object-cover"
         src={video1}
@@ -24,8 +24,8 @@ const App = () => (
       <Histoire />
       <Selects />
       <Carousel />
+      <Footer />
     </div>
-    <Footer />
   </div>
 );
 

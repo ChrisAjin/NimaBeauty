@@ -14,6 +14,9 @@
 	min-height: 100%;
 	z-index: -1; /* Assurez-vous que la vidéo reste en arrière-plan */
   }
+  html, body {
+	overscroll-behavior-y: none;
+  }
 
   .video-background video {
 	width: 100%;
