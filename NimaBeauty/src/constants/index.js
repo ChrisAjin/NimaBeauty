@@ -1,4 +1,8 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
+  import SpaceCity5 from "../assets/Imane.jpg";
+
+  import SpaceCity8 from "../assets/IMG.jpg";
+
 
 
 export const footerLinks = [
@@ -18,8 +22,7 @@ export const footerLinks = [
             { name: "Mon compte", link: "/" },
             { name: "Historique d'achat", link: "/" },
             { name: "CGV", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
+
         ],
     },
     {
@@ -38,3 +41,17 @@ export const socialMedia = [
     { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },
 ];
+
+  export const ServiceData = [
+
+	{
+	  title: "Management",
+	  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	  backgroundImage: SpaceCity5,
+	},
+	{
+	  title: "Production",
+	  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	  backgroundImage: SpaceCity8,
+	},
+  ];

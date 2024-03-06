@@ -5,7 +5,7 @@ const MonComposant = () => {
     <div name="home" className="relative h-screen w-full ">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className="flex flex-col justify-center h-full relative">
-          <div className="max-w-md mx-auto bg-white shadow-lg overflow-hidden md:max-w-4xl">
+          <div className="max-w-md mx-auto bg-white shadow-lg overflow-hidden md:max-w-4xl sizevideo">
             <div className="md:flex">
               <div className="p-12 ">
                 <h2 className="uppercase tracking-wide text-black mr-4 font-sofia">
