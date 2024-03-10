@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Histoire from "./components/Histoire";
 import Navbar from "./components/Navbar";
 import Selects from "./components/Selects";
-import Activeswiper from "./components/Activeswiper";
+import Slider from "./components/Slider";
 import video1 from "./assets/video4.mov";
 
 const App = () => (
@@ -24,7 +24,7 @@ const App = () => (
       <Hero />
       <Histoire />
       <Selects />
-      <Activeswiper />
+      <Slider />
       <Footer />
     </div>
   </div>

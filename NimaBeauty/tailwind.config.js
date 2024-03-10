@@ -6,10 +6,10 @@ export default {
 	  ],
   theme: {
 	fontFamily: {
-        'sofia': ['sofiapro-light', 'sans-serif'], // Ajoutez d'autres chutes de police si nécessaire
+        'sofia': ['sofiapro-light', 'sans-serif'],
+		'boska': ['boska-light', 'sans-serif'], // Ajoutez d'autres chutes de police si nécessaire
       },
     extend: {},
   },
   plugins: [],
 }
-

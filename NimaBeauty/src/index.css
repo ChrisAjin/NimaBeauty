@@ -6,6 +6,14 @@
 	font-family: 'sofiapro-light';
 	src: url('./assets/fonts/sofiapro-light.otf') format('truetype');
   }
+  @font-face {
+	font-family: 'boska-light';
+	src: url('./assets/fonts/Boska-Black.ttf') format('truetype');
+  }
+  .tit{
+	font-size: calc(45px + 120*(100vw - 320px) / 1080);
+	line-height: .8;
+  }
   .video-background {
 	position: fixed;
 	right: 0;
@@ -134,3 +142,8 @@
     @apply text-2xl cursor-pointer
   }
 }
+
+.imaneimg {
+	width: calc(100% - 60px);
+	height: auto;
+  }
