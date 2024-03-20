@@ -1,33 +1,19 @@
-import { useState } from "react";
-import Carousel from "./components/Carousel";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Histoire from "./components/Histoire";
-import Navbar from "./components/Navbar";
-import Selects from "./components/Selects";
-import Slider from "./components/Slider";
-import video1 from "./assets/video4.mov";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import { About } from "./Pages/About";
+import { Prestation } from "./Pages/Prestation";
 
-const App = () => (
-  <div>
-    <div className="fixed inset-0 z-0">
-      <video
-        className="w-full h-full object-cover"
-        src={video1}
-        autoPlay
-        loop
-        muted
-      />
-    </div>
-    <div className="content">
-      <Navbar />
-      <Hero />
-      <Histoire />
-      <Selects />
-      <Slider />
-      <Footer />
-    </div>
-  </div>
-);
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/prestation" element={<Prestation />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;

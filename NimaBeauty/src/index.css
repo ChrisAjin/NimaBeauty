@@ -144,6 +144,5 @@
 }
 
 .imaneimg {
-	width: calc(100% - 60px);
-	height: auto;
+	transform: translate3d(0);
   }
